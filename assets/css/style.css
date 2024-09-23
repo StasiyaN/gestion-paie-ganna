@@ -1,13 +1,26 @@
 /* styles.css */
+
 body {
     margin: 0;
 }
 
+body h1, h2, h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: bold;
+}
+
+body p, li {
+    font-family: "Montserrat", sans-serif;
+}
+
+body a {
+    text-decoration: none;
+}
 .background-div {
     position: relative;
     width: 100%;
     max-width: 1440px;
-    height: 100vh;
+    height: auto;
     /* color: white; Makes the text stand out */
     margin: 0;
 }
@@ -22,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4; /* Adjust the opacity here */
+    opacity: 0.2; /* Adjust the opacity here */
     z-index: -1; /* Places the background behind the text */
 }
 
@@ -39,7 +52,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 120vh;
+    gap: 115vh;
 }
 nav ul {
     display: flex;
@@ -55,11 +68,11 @@ nav ul {
 .content {
     display: flex;
     gap: 30px;
-    margin: 0 30px;
+    margin: 0 auto;
 }
 main {
     width: 40%;
-    background-color: aquamarine;
+    margin-left: 90px;
 }
 
 aside {
