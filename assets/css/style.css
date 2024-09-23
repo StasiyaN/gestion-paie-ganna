@@ -6,16 +6,35 @@ body {
 
 body h1, h2, h3 {
     font-family: "Quicksand", sans-serif;
-    font-size: bold;
+    font-weight: bold;
+}
+
+body h1 {
+    color: #2377A8;
+}
+
+body h2, h3, p {
+    color: #3f5965 ;
+
 }
 
 body p, li {
     font-family: "Montserrat", sans-serif;
+    color: black;
 }
 
 body a {
     text-decoration: none;
+    color: #3f5965;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
+
+body a:hover {
+    color: #289db9;
+    transform: scale(1.1);
+} 
+
 .background-div {
     position: relative;
     width: 100%;
@@ -58,6 +77,15 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+nav ul li {
+    font-weight: bold;
+    color: #3f5965;
+    transition: transform 0.3s ease;
+}
+nav ul li:hover {
+    color: #289db9;
+    transform: scale(1.1);
 }
 
 .logo {
