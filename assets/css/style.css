@@ -71,7 +71,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 115vh;
+    gap: 75vh;
 }
 nav ul {
     display: flex;
@@ -101,6 +101,11 @@ nav ul li:hover {
 main {
     width: 40%;
     margin-left: 90px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
 }
 
 aside {
