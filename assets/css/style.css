@@ -104,12 +104,15 @@ main {
 }
 
 .profile-img {
-    width: 300px;
     height: 300px;
 }
 
+.main-text-content {
+    margin-left: 40px;
+}
+
 aside {
-    background-color: rosybrown;
     width: 50%;
+    margin-top: 200px;
 }
 
