@@ -46,7 +46,7 @@ body a:hover {
 
 .background-div::before {
     content: "";
-    background-image: url("assets/img/background.jpg"); /* Add the path to your image */
+    background-image: url('assets/img/background.jpg'); /* Add the path to your image */
     background-size: cover;
     background-position: center;
     position: absolute;
