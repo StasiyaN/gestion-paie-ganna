@@ -71,7 +71,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 75vh;
+    gap: 825px;
 }
 nav ul {
     display: flex;
@@ -99,7 +99,7 @@ nav ul li:hover {
     margin: 0 auto;
 }
 main {
-    width: 40%;
+    width: 35%;
     margin-left: 90px;
 }
 
