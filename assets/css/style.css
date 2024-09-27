@@ -160,7 +160,7 @@ aside {
 
 /*popup styles*/
 
-.contact-popup {
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,5 +172,3 @@ aside {
     margin-bottom: 70px;
     font-family: "Montserrat", sans-serif;
 }
-
-
