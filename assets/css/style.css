@@ -60,7 +60,7 @@ body a:hover {
 
 /* fa colors*/
 .fa-circle-check {
-    color: #2377A8 ;
+    color: #289db9;
 }
 
 .content {
@@ -157,4 +157,20 @@ aside {
     margin-bottom: 10px;
     margin-left: -40px;
 }
+
+/*popup styles*/
+
+.contact-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-info,
+.email-info {
+    margin-bottom: 70px;
+    font-family: "Montserrat", sans-serif;
+}
+
 
