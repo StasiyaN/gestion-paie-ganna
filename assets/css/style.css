@@ -110,6 +110,13 @@ main {
 .main-text-content {
     margin-left: 40px;
 }
+
+.other-experience p, h3 {
+    color: #3f5965;
+}
+.boutique-title {
+    font-weight: bold;
+}
 /* show more styles other experience*/
 .collapsed .more-experience {
     display: none;
