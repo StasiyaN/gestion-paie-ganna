@@ -58,6 +58,11 @@ body a:hover {
     z-index: -1; /* Places the background behind the text */
 }
 
+/* fa colors*/
+.fa-circle-check {
+    color: #2377A8 ;
+}
+
 .content {
     position: relative;
     z-index: 1; /* Ensures the content is above the background */
@@ -142,8 +147,14 @@ aside {
     margin-top: 200px;
 }
 
-.intro p{
+.intro p {
     text-align: justify;
-    
+}
+
+/* pro skills block*/
+.pro-skills-list li, 
+.soft-skills-list li {
+    margin-bottom: 10px;
+    margin-left: -40px;
 }
 
