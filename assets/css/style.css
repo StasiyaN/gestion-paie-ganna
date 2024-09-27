@@ -110,9 +110,14 @@ main {
 .main-text-content {
     margin-left: 40px;
 }
-
+/*aside*/
 aside {
     width: 50%;
     margin-top: 200px;
+}
+
+.intro p{
+    text-align: justify;
+    
 }
 
