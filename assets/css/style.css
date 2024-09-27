@@ -110,6 +110,25 @@ main {
 .main-text-content {
     margin-left: 40px;
 }
+/* show more styles other experience*/
+.collapsed .more-experience {
+    display: none;
+}
+.expanded .more-experience {
+    display: list-item;
+}
+#toggle-btn {
+    background-color: #289db9;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
 /*aside*/
 aside {
     width: 50%;
