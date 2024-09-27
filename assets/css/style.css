@@ -98,6 +98,10 @@ nav ul li:hover {
 }
 
 /* main content*/
+.profile-picture {
+    animation: zoomIn 1.5s forwards; /* Zoom-in effect */
+
+}
 .content {
     display: flex;
     gap: 30px;
@@ -149,6 +153,20 @@ aside {
 
 .intro p {
     text-align: justify;
+    opacity: 0; /* Start invisible */
+    animation: slideUp 1.2s forwards; 
+}
+
+.pro-skills {
+    opacity: 0; /* Start invisible */
+    animation: slideUp 1s forwards; 
+    animation-delay: 1.2s;
+}
+.soft-skills {
+    opacity: 0; /* Start invisible */
+    animation: slideUp 1s forwards; 
+    animation-delay: 2.4s;
+
 }
 
 /* pro skills block*/
@@ -167,8 +185,73 @@ aside {
     align-items: center;
 }
 
-.phone-info,
-.email-info {
-    margin-bottom: 70px;
+.phone-info {
+    margin-top: 20px;
+  
+}
+
+/* Add this to your existing CSS */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contact-info {
+    margin-bottom: 50px;
     font-family: "Montserrat", sans-serif;
+    opacity: 0; /* Start invisible */
+    animation: slideUp 1s forwards; /* Animation details */
+}
+
+/* Add delays to each contact-info div for staggered effect */
+.contact-info:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.contact-info:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.contact-info:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.map {
+    margin-top: 20px;
+    height: 410px; /* Set the height of the map */
+    width: 810px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: zoomIn 1s forwards; /* Zoom-in effect */
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
