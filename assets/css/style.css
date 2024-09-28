@@ -46,16 +46,16 @@ body a:hover {
 
 .background-div::before {
     content: "";
-    background-image: url('../img/background.jpg'); /* Add the path to your image */
-    background-size: cover;
+    background-image: url('../img/background.jpg'); 
     background-position: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2; /* Adjust the opacity here */
-    z-index: -1; /* Places the background behind the text */
+    opacity: 0.2; 
+    z-index: -1; 
+    animation: fadeInBackground 2s ease-in-out forwards;
 }
 
 /* fa colors*/
@@ -190,17 +190,7 @@ aside {
   
 }
 
-/* Add this to your existing CSS */
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 
 .contact-info {
     margin-bottom: 50px;
@@ -235,6 +225,19 @@ iframe {
 }
 
 
+/*keyframes*/
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slideDown {
     from {
         transform: translateY(0);
@@ -253,5 +256,14 @@ iframe {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2; /* Final opacity value */
     }
 }
