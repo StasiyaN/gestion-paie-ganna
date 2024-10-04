@@ -59,7 +59,8 @@ body a:hover {
 }
 
 /* fa colors*/
-.fa-circle-check {
+.fa-circle-check,
+.fa-circle {
     color: #289db9;
 }
 
@@ -87,10 +88,14 @@ nav ul li {
     font-weight: bold;
     color: #3f5965;
     transition: transform 0.3s ease;
+ 
 }
 nav ul li:hover {
     color: #289db9;
     transform: scale(1.1);
+}
+nav ul li a {
+    white-space: nowrap;
 }
 
 .logo {
@@ -114,10 +119,6 @@ main {
 
 .profile-img {
     height: 300px;
-}
-
-.main-text-content {
-    margin-left: 40px;
 }
 
 .other-experience p, h3 {
@@ -145,12 +146,45 @@ main {
     margin-left: 35px;
 }
 
+.language-circles i {
+    vertical-align: middle;
+}
+.fr {
+    margin-left: 20px;
+}
+.en {
+    margin-left: 27px;
+}
+.ru {
+    margin-left: 38px;
+}
+
+.ua {
+    margin-left: 8.2px;
+}
+
+
 /*aside*/
 aside {
     width: 50%;
-    margin-top: 200px;
+    margin-top: 10px;
 }
 
+.main-text-content {
+    font-size: 30px !important;
+    margin-left: 0;
+    animation: zoomIn 1.5s forwards; /* Zoom-in effect */
+    margin-bottom: 70px;
+}
+.main-text-content h1 {
+    color: #289db9 !important;
+    font-weight: bold !important;
+    font-family: "Roboto", sans-serif !important;
+    font-style: italic;
+}
+.surname {
+    color: #3f5965;
+}
 .intro p {
     text-align: justify;
     opacity: 0; /* Start invisible */
