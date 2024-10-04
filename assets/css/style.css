@@ -15,7 +15,7 @@ body h1 {
 
 body h2, h3, p {
     color: #3f5965 ;
-
+    
 }
 
 body p, li {
@@ -69,7 +69,7 @@ body a:hover {
     z-index: 1; /* Ensures the content is above the background */
 }
 /* Navigation */
- ul li {
+ul li {
     list-style-type: none;
 }
 nav {
@@ -88,7 +88,7 @@ nav ul li {
     font-weight: bold;
     color: #3f5965;
     transition: transform 0.3s ease;
- 
+    
 }
 nav ul li:hover {
     color: #289db9;
@@ -105,7 +105,7 @@ nav ul li a {
 /* main content*/
 .profile-picture {
     animation: zoomIn 1.5s forwards; /* Zoom-in effect */
-
+    
 }
 .content {
     display: flex;
@@ -200,7 +200,7 @@ aside {
     opacity: 0; /* Start invisible */
     animation: slideUp 1s forwards; 
     animation-delay: 2.4s;
-
+    
 }
 
 /* pro skills block*/
@@ -221,7 +221,7 @@ aside {
 
 .phone-info {
     margin-top: 20px;
-  
+    
 }
 
 .contact-info {
@@ -243,6 +243,30 @@ aside {
 }
 
 
+/*schools*/
+.rh-school-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.logo-esccom {
+    width: 250px !important;
+    border-radius: 100px;
+}
+.school-description {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-description p {
+    text-align: justify;
+}
+
 /*formation GP Esccom*/
 .formation-gestion-paie-content,
 .rh-school-content {
@@ -257,8 +281,20 @@ aside {
 .rh-school {
     margin: 0 auto;
     width: 80%;
+    padding-top: 30px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.skills ul li {
+    margin-bottom: 20px;
+}
 
 /*keyframes*/
 
@@ -320,72 +356,89 @@ aside {
 /* madia queries*/
 
 @media (max-width: 1024px) {
-.burger-menu-icon {
-    display: block;
-    position: absolute;
-    width: 27.42px;
-    height: 18.85px;
-    top: 50px;
-    z-index: 3;
-    left: 90%;
-    cursor: pointer;
+    .burger-menu-icon {
+        display: block;
+        position: absolute;
+        width: 27.42px;
+        height: 18.85px;
+        top: 50px;
+        z-index: 3;
+        left: 90%;
+        cursor: pointer;
+    }
+    
+    .burger-menu-icon span {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        top: 9.42px;
+    }
+    
+    .burger-menu-icon:before,
+    .burger-menu-icon:after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+    }
+    
+    .burger-menu-icon:before {
+        top: 0;
+    }
+    .burger-menu-icon:after {
+        bottom: 0;
+    }
+    
+    .links {
+        background-color: white;
+        
+    }
+    .links ul {
+        padding-top: 150px;
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 0;
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
+        background-size: cover; /* Ensure the background image covers the whole area */
+        background-position: center; /* Center the background image */
+        z-index: 9999; /* Make sure it's on top */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        background-image: url('../img/background-contact.jpg'); 
+    }
+    
+    .links ul li {
+        font-size: 25px;
+    }
+    
+    
+    /* Show the menu when active */
+    .links.active ul {
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
 }
 
-.burger-menu-icon span {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    height: 1px;
-    top: 9.42px;
-}
-
-.burger-menu-icon:before,
-.burger-menu-icon:after {
-    content: '';
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-}
-
-.burger-menu-icon:before {
-    top: 0;
-}
-.burger-menu-icon:after {
-    bottom: 0;
-}
-
-.links {
-    background-color: white;
-
-}
-.links ul {
-    padding-top: 150px;
-    display: none;
-    position: fixed;
-    top: 10%;
-    left: 0;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    background-size: cover; /* Ensure the background image covers the whole area */
-    background-position: center; /* Center the background image */
-    z-index: 9999; /* Make sure it's on top */
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    background-image: url('../img/background-contact.jpg'); 
-}
-
-.links ul li {
-    font-size: 25px;
-}
-
-
- /* Show the menu when active */
- .links.active ul {
-    display: flex;
-}
+@media (max-width: 425px) {
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 80%;
+    }
 }
