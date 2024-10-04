@@ -258,6 +258,20 @@ iframe {
     border: 0;
 }
 
+/*formation GP Esccom*/
+.formation-gestion-paie-content {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-size: cover; /* Ensure the background image covers the whole area */
+    background-position: center; /* Center the background image */
+    transition: all 0.3s ease-in-out;
+    background-image: url('../img/background-contact.jpg'); 
+}
+.esccom-school {
+    margin: 0 auto;
+    width: 80%;
+}
+
 
 /*keyframes*/
 
