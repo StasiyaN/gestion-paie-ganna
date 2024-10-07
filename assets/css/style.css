@@ -368,7 +368,48 @@ aside {
     border-radius: 50px;
 }
 
+/*stage GP page*/
+.main-stage-rh,
+.main-stage-gp {
+    margin: 0 80px;
+}
 
+.stage-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage-about img {
+    border-radius: 50px;
+}
+
+.stage-about ul li {
+    margin-bottom: 20px;
+
+}
+
+/*stage GP*/
+
+.oxford-logo-img {
+    border-radius: 20px !important;
+}
+.last-line {
+    margin-left: 20px;
+}
+
+.oxford-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.oxford-letter img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
 
 
 
