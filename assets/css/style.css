@@ -314,6 +314,32 @@ aside {
     margin-left: 100px;
 }
 /*formation rh*/
+/*a propos page*/
+.main-text-about {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 150px;
+}
+.main-text-about p {
+    font-size: 20px;
+    text-align: justify;
+}
+.official-documents {
+    display: flex;
+}
+.documents-gp, 
+.documents-rh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.documents-gp img, 
+.documents-rh img {
+    border-radius: 50px;
+}
+
+
+
 
 /*keyframes*/
 
