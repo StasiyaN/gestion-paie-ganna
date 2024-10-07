@@ -86,6 +86,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    align-items: center;
 }
 nav ul li {
     font-weight: bold;
@@ -99,6 +100,12 @@ nav ul li:hover {
 }
 nav ul li a {
     white-space: nowrap;
+}
+
+.linkedin-icon {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .logo {
@@ -202,9 +209,32 @@ aside {
 .soft-skills {
     opacity: 0; /* Start invisible */
     animation: slideUp 1s forwards; 
-    animation-delay: 2.4s;
-    
+    animation-delay: 3.6s;
 }
+
+.computing-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    opacity: 0; /* Start invisible */
+    animation: slideUp 1s forwards; 
+    animation-delay: 2.4s;
+}
+
+/*computing*/
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.general-computing,
+.gestion-paie-computing {
+    display: flex;
+    gap: 50px;
+}
+
 
 /* pro skills block*/
 .pro-skills-list li, 
@@ -321,7 +351,7 @@ aside {
     margin-top: 150px;
 }
 .main-text-about p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 .official-documents {
@@ -337,6 +367,8 @@ aside {
 .documents-rh img {
     border-radius: 50px;
 }
+
+
 
 
 
@@ -400,7 +432,7 @@ aside {
 
 /* madia queries*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1337px) {
     .burger-menu-icon {
         display: block;
         position: absolute;
@@ -439,11 +471,11 @@ aside {
     }
     
     .links {
-        background-color: white;
-        
+        position: relative;
     }
+ 
     .links ul {
-        padding-top: 150px;
+        padding-top: 50px;
         display: none;
         position: fixed;
         top: 10%;
@@ -454,8 +486,6 @@ aside {
         background-position: center; /* Center the background image */
         z-index: 9999; /* Make sure it's on top */
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         transition: all 0.3s ease-in-out;
         background-image: url('../img/background-contact.jpg'); 
     }
@@ -463,16 +493,23 @@ aside {
     .links ul li {
         font-size: 25px;
     }
+    .linkedin-icon {
+        margin-left: 0;
+        width: 30px;
+        height: 30px;
+    }
     
     
     /* Show the menu when active */
     .links.active ul {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 768px) {
     .content {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -490,6 +527,11 @@ aside {
 @media (max-width: 425px) {
     main {
         margin-left: 15%;
+    }
+
+    .general-computing,
+    .gestion-paie-computing {
+        gap: 30px;
     }
 }
 @media (max-width: 320px) {

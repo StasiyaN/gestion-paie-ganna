@@ -23,17 +23,25 @@ if (toggleBtn && experienceList) {
 
 
   //burger menu handler
-    // Get the burger menu icon and the links container
-    const burgerMenu = document.querySelector('.burger-menu-icon');
-    const links = document.querySelector('.links');
-    
+// Get the burger menu icon and the links container
+const burgerMenu = document.querySelector('.burger-menu-icon');
+const links = document.querySelector('.links');
 
-    // Add click event listener to the burger menu
-    burgerMenu.addEventListener('click', () => {
-        // Toggle the 'active' class on the links container
-        links.classList.toggle('active');
-        burgerMenu.classList.toggle('open');
-    });
+// Add click event listener to the burger menu
+burgerMenu.addEventListener('click', () => {
+    // Toggle the 'active' class on the links container
+    links.classList.toggle('active');
+    burgerMenu.classList.toggle('open');
+    
+    // Check if the 'active' class is applied
+    if (links.classList.contains('active')) {
+        // Disable scrolling on the body
+        document.body.style.overflow = 'hidden';
+    } else {
+        // Enable scrolling on the body when the menu is closed
+        document.body.style.overflow = '';
+    }
+});
 
 
 
