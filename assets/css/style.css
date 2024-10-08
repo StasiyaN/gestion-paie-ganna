@@ -24,6 +24,10 @@ body p, li {
     color: black;
 }
 
+body ul {
+    padding-inline-start: 0;
+}
+
 body a {
     text-decoration: none;
     color: #3f5965;
@@ -37,11 +41,12 @@ body a:hover {
 } 
 
 .background-div {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     max-width: 1440px;
     height: auto;
-    /* color: white; Makes the text stand out */
     margin: 0;
 }
 
@@ -58,7 +63,9 @@ body a:hover {
     z-index: -1; 
     animation: fadeInBackground 2s ease-in-out forwards;
 }
-
+.profile-image {
+    order: 1;
+}
 
 /* fa colors*/
 .fa-circle-check,
@@ -122,9 +129,13 @@ nav ul li a {
     gap: 30px;
     margin: 0 auto;
 }
-main {
+.left {
+    opacity: 0;
+    margin-top: 150px;
     width: 35%;
-    margin-left: 90px;
+    margin-left: 50px;
+    animation: zoomIn 1.5s forwards; /* Zoom-in effect */
+    animation-delay: 1s;
 }
 
 .profile-img {
@@ -212,6 +223,14 @@ aside {
     animation-delay: 3.6s;
 }
 
+.pro-skills-list,
+.soft-skills-list {
+    margin-left: 45px;
+}
+
+
+
+/*computing*/
 .computing-skills {
     display: flex;
     flex-direction: column;
@@ -221,8 +240,6 @@ aside {
     animation: slideUp 1s forwards; 
     animation-delay: 2.4s;
 }
-
-/*computing*/
 
 .card img {
     width: 50px;
@@ -337,7 +354,8 @@ aside {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     padding-bottom: 5px;
-    margin-left: 150px;
+    margin-left: 100px;
+    padding-inline-start: 0;
 }
 
 .skills ul li {
@@ -348,7 +366,7 @@ aside {
 
 /*formation GP */
 .gp-h2 {
-    margin-left: 100px;
+    text-align: center;
 }
 /*formation rh*/
 /*a propos page*/
@@ -532,7 +550,7 @@ aside {
         padding-top: 50px;
         display: none;
         position: fixed;
-        top: 10%;
+        top: 12%;
         left: -30px;
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
@@ -542,6 +560,8 @@ aside {
         flex-direction: column;
         transition: all 0.3s ease-in-out;
         background-image: url('../img/background-contact.jpg'); 
+
+
     }
     
     .links ul li {
@@ -567,63 +587,77 @@ aside {
     }
 }
 @media (max-width: 910px){
-    main {
-        margin-left: 50px;
-    }
-    .profile-img {
-        height: 250px;
-    }
-
-    .skills ul {
-        margin: 0;
-    }
-
-    .gp-h2 {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .main-text-about {
-        margin-top: 100px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
-@media (max-width: 768px) {
     body p, li {
-        text-align: justify
+        text-align: justify;
     }
+
     .content {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    main {
+    /* Ensure the .left block takes full width */
+    .left {
+        margin-top: 0;
         width: 100%;
         margin-left: 30%;
+        order: 3; /* Make it appear last */
     }
+
     .main-text-content h1 {
         text-align: center;
     }
+
+    /* Make aside narrower and second in order */
     aside {
         width: 80%;
+        order: 2; /* Make it appear second */
     }
+
+    /* Center headings */
     
+    .pro-skills,
+    .soft-skills,
     .documents-gp h2,
     .rh-h2, 
     .documents-rh h2 {
         text-align: center;
+    }
+    .gp-h2 {
+        margin-left: 0;
+    }
+    .pro-skills ul,
+    .soft-skills ul {
+        margin-left: 45px;
     }
 
     .stage-about h1 {
         text-align: center;
     }
 
+    /* Make the profile image first */
+    .profile-image {
+        order: 1; /* Ensure this appears first */
+    }
+
+    /* Adjust display to flex-column */
+    .background-div {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
 }
 
+@media (max-width: 768px) {
+
+    .skills ul {
+        margin-left: 0;
+    }
+
+}
 @media (max-width: 425px) {
-    main {
+    .left {
         margin-left: 15%;
     }
     .general-computing,
@@ -696,6 +730,11 @@ aside {
 
     main {
         margin-left: 10%;
+    }
+
+    .formations ul
+    .experience ul {
+        padding-inline-start: 0 !important;
     }
 
     .formations ul li,
