@@ -427,9 +427,7 @@ aside {
 .oxford-logo-img {
     border-radius: 20px !important;
 }
-.last-line {
-    margin-left: 20px;
-}
+
 
 .oxford-letter {
     display: flex;
@@ -554,7 +552,7 @@ aside {
         padding-top: 50px;
         display: none;
         position: fixed;
-        top: 12%;
+        top: 11%;
         left: 0;
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
