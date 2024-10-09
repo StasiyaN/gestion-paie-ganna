@@ -444,7 +444,11 @@ aside {
     border-radius: 30px;
 }
 
-
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+}
 
 
 /*keyframes*/
@@ -552,7 +556,7 @@ aside {
         padding-top: 50px;
         display: none;
         position: fixed;
-        top: 11%;
+        top: 100px;
         left: 0;
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */

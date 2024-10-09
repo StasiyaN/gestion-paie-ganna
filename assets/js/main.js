@@ -43,6 +43,7 @@ burgerMenu.addEventListener('click', () => {
     }
 });
 
-
+ // Get the current year and update the span with id="year"
+ document.getElementById("year").textContent = new Date().getFullYear();
 
 })
