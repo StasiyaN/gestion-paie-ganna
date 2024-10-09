@@ -39,21 +39,21 @@ body a:hover {
     color: #289db9;
     transform: scale(1.1);
 } 
-
 .background-div {
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 100%;
     max-width: 1440px;
     height: auto;
     margin: 0;
+    overflow: hidden;
 }
 
 .background-div::before {
     content: "";
     background-image: url('../img/background.jpg'); 
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,11 @@ body a:hover {
     opacity: 0.2; 
     z-index: -1; 
     animation: fadeInBackground 2s ease-in-out forwards;
+    /* Optional Enhancements */
+    background-attachment: fixed;
+    pointer-events: none;
 }
+
 .profile-image {
     order: 1;
 }
@@ -551,7 +555,7 @@ aside {
         display: none;
         position: fixed;
         top: 12%;
-        left: -30px;
+        left: 0;
         width: 100vw; /* Full width */
         height: 100vh; /* Full height */
         background-size: cover; /* Ensure the background image covers the whole area */
