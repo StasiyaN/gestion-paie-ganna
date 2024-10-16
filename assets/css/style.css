@@ -747,9 +747,8 @@ footer {
     .experience ul li {
         padding-bottom: 10px;
     }
-
-    .fa-xs {
-        font-size: 0.50em;
+    .fa-circle{
+        font-size: 0.55em !important;
     }
 
     .oxford-letter img {
