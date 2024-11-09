@@ -27,7 +27,9 @@ body p, li {
 body ul {
     padding-inline-start: 0;
 }
-
+.home-icon {
+    display: none;
+}
 body a {
     text-decoration: none;
     color: #3f5965;
@@ -146,6 +148,9 @@ nav ul li a {
     height: 300px;
 }
 
+.fa-arrow-right {
+    display: none;
+}
 .other-experience p, h3 {
     color: #3f5965;
 }
@@ -350,8 +355,8 @@ aside {
     margin-top: 50px;
     margin-left: 100px;
     opacity: 0;
-   animation: slideUp 1.5s forwards; 
-   animation-delay: 1.2s;
+    animation: slideUp 1.5s forwards; 
+    animation-delay: 1.2s;
 }
 
 .skills ul {
@@ -593,7 +598,7 @@ footer {
     }
 }
 @media (max-width: 910px){
-    body p, li {
+       body p, li {
         text-align: justify;
     }
 
@@ -613,6 +618,17 @@ footer {
 
     .main-text-content h1 {
         text-align: center;
+    }
+
+ 
+    .fa-arrow-right {
+        display: inline;
+    }
+
+    .arrows {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
     }
 
     /* Make aside narrower and second in order */
@@ -720,6 +736,10 @@ footer {
         width: 100px;
         margin-top: 40px;
     }
+
+    .arrows {
+        gap: 10px;
+    }
 }
 @media (max-width: 320px) {
 
@@ -747,6 +767,17 @@ footer {
     .experience ul li {
         padding-bottom: 10px;
     }
+
+    .formations a,
+    .experience a {
+        text-align: start;
+    }
+    
+    .arrows {
+        flex-direction: column;
+        gap: 0px !important;
+    }
+
     .fa-circle{
         font-size: 0.45em !important;
     }
