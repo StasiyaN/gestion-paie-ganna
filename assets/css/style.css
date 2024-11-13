@@ -198,7 +198,7 @@ nav ul li a {
 
 
 /*aside*/
-aside {
+.second {
     width: 50%;
     margin-top: 10px;
 }
@@ -632,7 +632,7 @@ footer {
     }
 
     /* Make aside narrower and second in order */
-    aside {
+    .second {
         width: 80%;
         order: 2; /* Make it appear second */
     }
